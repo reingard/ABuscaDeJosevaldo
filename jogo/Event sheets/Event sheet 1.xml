@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <event-group description="" sid="318205359579192" title="Movimentação">
+            <sub-events>
+                <event-block sid="364948903233385">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="319975015550922" type="Keyboard">
+                            <param id="0" name="Key">68 (D)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="924968225630994" type="NinjaPreto">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="559260394572646">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="292264036814673" type="Keyboard">
+                            <param id="0" name="Key">65 (A)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="500996937341578" type="NinjaPreto">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="819156895299817">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="636041609836176" type="Keyboard">
+                            <param id="0" name="Key">87 (W)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="383836708675779" type="NinjaPreto">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="238049509809169">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="543648573019386" type="Keyboard">
+                            <param id="0" name="Key">65 (A)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="748650322068246" type="NinjaPreto">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="544243158858061">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="287889766899960" type="Keyboard">
+                            <param id="0" name="Key">68 (D)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="212374685987994" type="NinjaPreto">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-group description="" sid="510484392973980" title="Animação">
+                    <sub-events>
+                        <event-block sid="962369326094854">
+                            <conditions>
+                                <condition behavior="Platform" id="9" name="On landed" sid="121796291301036" type="NinjaPreto" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="490773345843258">
+                                    <conditions>
+                                        <condition behavior="Platform" id="0" name="Is moving" sid="459017885418916" type="NinjaPreto" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="406254341690069" type="NinjaPreto">
+                                            <param id="0" name="Animation">&quot;Run&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="842303128196530">
+                                    <conditions>
+                                        <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="368019274548062" type="NinjaPreto" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="433838149797874" type="NinjaPreto">
+                                            <param id="0" name="Animation">&quot;Still&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="692381817771049">
+                            <conditions>
+                                <condition behavior="Platform" id="0" name="Is moving" sid="154902475415063" type="NinjaPreto" />
+                                <condition behavior="Platform" id="2" name="Is on floor" sid="736230044652085" type="NinjaPreto" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="527345954151189" type="NinjaPreto">
+                                    <param id="0" name="Animation">&quot;Run&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="452856235826985">
+                            <conditions>
+                                <condition behavior="Platform" id="7" name="On stopped" sid="110600125964874" type="NinjaPreto" />
+                                <condition behavior="Platform" id="2" name="Is on floor" sid="332414422121396" type="NinjaPreto" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="760348362976087" type="NinjaPreto">
+                                    <param id="0" name="Animation">&quot;Still&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="107082571762613">
+                            <conditions>
+                                <condition behavior="Platform" id="5" name="On jump" sid="324058054186824" type="NinjaPreto" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="251178887629664" type="NinjaPreto">
+                                    <param id="0" name="Animation">&quot;Jump&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="910635627700946" title="Luz">
+            <sub-events>
+                <event-block sid="139938233215061">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="865714089166900" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="216657842177202" type="Escuro">
+                            <param id="0" name="Pin to">NinjaPreto</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="859054456247675" title="Mouse Crosshair">
+            <sub-events>
+                <event-block sid="581395019002651">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="954153171388763" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="1" name="Set cursor from sprite" sid="414596089019904" type="Mouse">
+                            <param id="0" name="Sprite">Crosshair</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="926685280899870">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="104804458026852" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="733483561371573" type="Crosshair" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="860930688571727">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="752515517507179" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="649106446600877" type="Escuro2">
+                    <param id="0" name="X">mouse.X</param>
+                    <param id="1" name="Y">mouse.Y</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
