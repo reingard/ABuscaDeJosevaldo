@@ -260,7 +260,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="2" loop="0" name="Still" pingpong="0" repeatcount="1" repeatto="0" sid="142961056808936" speed="5">
-                    <frame duration="1" hotspotX="3.15625" hotspotY="-1.3125" original-source="C:\Users\20171144010050\Pictures\Arquivos para o jogo\WhiteStill.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="C:\Users\20171144010050\Pictures\Arquivos para o jogo\WhiteStill.png">
                         <collision-poly>
                             <point x="0.3125" y="0.109375" />
                             <point x="0.714844" y="0.109375" />
@@ -268,7 +268,7 @@
                             <point x="0.320313" y="1" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" />
                 </animation>
                 <animation framecount="2" loop="1" name="Run" pingpong="0" repeatcount="1" repeatto="0" sid="852586037680280" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="C:\Users\20171144010050\Pictures\Arquivos para o jogo\WhiteRunning.png">
@@ -349,6 +349,58 @@
                             <point x="0.748047" y="0.0625" />
                             <point x="0.75" y="1" />
                             <point x="0.310547" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="E_White3" sid="876961418090473">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Patrol" sid="405638450656924" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="641958256666104">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Still" pingpong="0" repeatcount="1" repeatto="0" sid="576560034800083" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="C:\Users\20171144010050\Pictures\Arquivos para o jogo\WhiteStill.png">
+                        <collision-poly>
+                            <point x="0.3125" y="0.109375" />
+                            <point x="0.714844" y="0.109375" />
+                            <point x="0.710937" y="1" />
+                            <point x="0.320313" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" />
+                </animation>
+                <animation framecount="2" loop="1" name="Run" pingpong="0" repeatcount="1" repeatto="0" sid="531996350527386" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="C:\Users\20171144010050\Pictures\Arquivos para o jogo\WhiteRunning.png">
+                        <collision-poly>
+                            <point x="0.273438" y="0.0898438" />
+                            <point x="0.789063" y="0.0859375" />
+                            <point x="0.792969" y="1" />
+                            <point x="0.269531" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="C:\Users\20171144010050\Pictures\Arquivos para o jogo\WhiteRunning2.png">
+                        <collision-poly>
+                            <point x="0.316406" y="0.132813" />
+                            <point x="0.695313" y="0.128906" />
+                            <point x="0.691406" y="0.996094" />
+                            <point x="0.316406" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Jump" pingpong="0" repeatcount="1" repeatto="0" sid="505133155075461" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="C:\Users\20171144010050\Pictures\Arquivos para o jogo\WhiteJumping.png">
+                        <collision-poly>
+                            <point x="0.300781" y="0.0585938" />
+                            <point x="0.753906" y="0.0546875" />
+                            <point x="0.753906" y="1" />
+                            <point x="0.304688" y="1" />
                         </collision-poly>
                     </frame>
                 </animation>
