@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Enemy_IA</name>
+    <events>
+        <event-block sid="585516100985671">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="255404378943169" type="E_White">
+                    <param id="0" name="Object">Border</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="417121947910605">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="104540706661817" type="E_White">
+                            <param id="0" name="Instance variable">Patrol</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>
