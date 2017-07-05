@@ -3,76 +3,6 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Enemy_IA</name>
     <events>
-        <event-block sid="585516100985671">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="255404378943169" type="E_White">
-                    <param id="0" name="Object">Border</param>
-                </condition>
-            </conditions>
-            <actions />
-            <sub-events>
-                <event-block sid="327551536807010">
-                    <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="543984812008931" type="E_White">
-                            <param id="0" name="Instance variable">Patrol</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-10" name="Set value" sid="177781797043803" type="E_White">
-                            <param id="0" name="Instance variable">Patrol</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="417121947910605">
-                    <conditions>
-                        <condition id="-22" name="Else" sid="394441986821943" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="-10" name="Set value" sid="960142035372216" type="E_White">
-                            <param id="0" name="Instance variable">Patrol</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-block>
-        <event-block sid="883048892271733">
-            <conditions>
-                <condition id="-7" name="Compare instance variable" sid="172690102439454" type="E_White">
-                    <param id="0" name="Instance variable">Patrol</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">0</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action behavior="Platform" id="7" name="Simulate control" sid="434072714568240" type="E_White">
-                    <param id="0" name="Control">1</param>
-                </action>
-                <action id="7" name="Set mirrored" sid="473524396782310" type="E_White">
-                    <param id="0" name="State">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="186297381481166">
-            <conditions>
-                <condition id="-7" name="Compare instance variable" sid="373449741471250" type="E_White">
-                    <param id="0" name="Instance variable">Patrol</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">1</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action behavior="Platform" id="7" name="Simulate control" sid="890456131969364" type="E_White">
-                    <param id="0" name="Control">0</param>
-                </action>
-                <action id="7" name="Set mirrored" sid="730963904813559" type="E_White">
-                    <param id="0" name="State">0</param>
-                </action>
-            </actions>
-        </event-block>
         <event-group description="" sid="385581536022314" title="Animação2">
             <sub-events>
                 <event-block sid="632388515523491">
@@ -142,5 +72,75 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="269816702865272">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="308334477153902" type="E_White">
+                    <param id="0" name="Instance variable">Patrol</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="249805562339047" type="E_White">
+                    <param id="0" name="Control">1</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="317644635229786" type="E_White">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="907147114186822">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="751168136115075" type="E_White">
+                    <param id="0" name="Instance variable">Patrol</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="116699871340150" type="E_White">
+                    <param id="0" name="Control">0</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="589271045504630" type="E_White">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="615682415228273">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="112387141343470" type="E_White">
+                    <param id="0" name="Object">Border</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="835055709985640">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="140869703873146" type="E_White">
+                            <param id="0" name="Instance variable">Patrol</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="416131925689149" type="E_White">
+                            <param id="0" name="Instance variable">Patrol</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="561877037088759">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="156347115250111" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="891570219575248" type="E_White">
+                            <param id="0" name="Instance variable">Patrol</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
     </events>
 </c2eventsheet>
