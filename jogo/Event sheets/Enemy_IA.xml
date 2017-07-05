@@ -11,17 +11,136 @@
             </conditions>
             <actions />
             <sub-events>
-                <event-block sid="417121947910605">
+                <event-block sid="327551536807010">
                     <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="104540706661817" type="E_White">
+                        <condition id="-7" name="Compare instance variable" sid="543984812008931" type="E_White">
                             <param id="0" name="Instance variable">Patrol</param>
                             <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">0</param>
+                            <param id="2" name="Value">1</param>
                         </condition>
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="-10" name="Set value" sid="177781797043803" type="E_White">
+                            <param id="0" name="Instance variable">Patrol</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="417121947910605">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="394441986821943" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="960142035372216" type="E_White">
+                            <param id="0" name="Instance variable">Patrol</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
                 </event-block>
             </sub-events>
         </event-block>
+        <event-block sid="883048892271733">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="172690102439454" type="E_White">
+                    <param id="0" name="Instance variable">Patrol</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="434072714568240" type="E_White">
+                    <param id="0" name="Control">1</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="473524396782310" type="E_White">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="186297381481166">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="373449741471250" type="E_White">
+                    <param id="0" name="Instance variable">Patrol</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="890456131969364" type="E_White">
+                    <param id="0" name="Control">0</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="730963904813559" type="E_White">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="385581536022314" title="Animação2">
+            <sub-events>
+                <event-block sid="632388515523491">
+                    <conditions>
+                        <condition behavior="Platform" id="9" name="On landed" sid="216909588717459" type="E_White" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="290713181019014">
+                            <conditions>
+                                <condition behavior="Platform" id="0" name="Is moving" sid="499550757654564" type="E_White" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="720248531892033" type="E_White">
+                                    <param id="0" name="Animation">&quot;Run&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="596307418736823">
+                            <conditions>
+                                <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="315323345915635" type="E_White" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="406105767218508" type="E_White">
+                                    <param id="0" name="Animation">&quot;Still&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="432953579003237">
+                    <conditions>
+                        <condition behavior="Platform" id="0" name="Is moving" sid="688667490314532" type="E_White" />
+                        <condition behavior="Platform" id="2" name="Is on floor" sid="172286993464702" type="E_White" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="691780355775559" type="E_White">
+                            <param id="0" name="Animation">&quot;Run&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="860853391652734">
+                    <conditions>
+                        <condition behavior="Platform" id="7" name="On stopped" sid="354147606476223" type="E_White" />
+                        <condition behavior="Platform" id="2" name="Is on floor" sid="558674982016440" type="E_White" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="310536990629019" type="E_White">
+                            <param id="0" name="Animation">&quot;Still&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="193996550532863">
+                    <conditions>
+                        <condition behavior="Platform" id="5" name="On jump" sid="952910169324884" type="E_White" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="318755539187759" type="E_White">
+                            <param id="0" name="Animation">&quot;Jump&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>
