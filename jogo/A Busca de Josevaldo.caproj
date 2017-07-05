@@ -184,13 +184,77 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Sprite2" sid="226198686711607">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="153821398785260" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="E_White" sid="649908926698850">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Patrol" sid="456179645620980" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="820769706766911">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Still" pingpong="0" repeatcount="1" repeatto="0" sid="783499767692211" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\20171144010050\Pictures\Arquivos para o jogo\WhiteStill.png">
+                        <collision-poly>
+                            <point x="0.4375" y="0.4375" />
+                            <point x="0.5" y="0.125" />
+                            <point x="0.6875" y="0.3125" />
+                            <point x="0.65625" y="0.5" />
+                            <point x="0.6875" y="0.6875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.34375" y="0.65625" />
+                            <point x="0.3125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="1" name="Run" pingpong="0" repeatcount="1" repeatto="0" sid="439048627197599" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\20171144010050\Pictures\Arquivos para o jogo\WhiteRunning.png">
+                        <collision-poly>
+                            <point x="0.40625" y="0.40625" />
+                            <point x="0.5" y="0.09375" />
+                            <point x="0.65625" y="0.34375" />
+                            <point x="0.71875" y="0.5" />
+                            <point x="0.78125" y="0.78125" />
+                            <point x="0.5" y="0.78125" />
+                            <point x="0.40625" y="0.59375" />
+                            <point x="0.34375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\20171144010050\Pictures\Arquivos para o jogo\WhiteRunning2.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="Jump" pingpong="0" repeatcount="1" repeatto="0" sid="646982635191691" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\20171144010050\Pictures\Arquivos para o jogo\WhiteJumping.png">
+                        <collision-poly>
+                            <point x="0.40625" y="0.40625" />
+                            <point x="0.5" y="0.0625" />
+                            <point x="0.625" y="0.375" />
+                            <point x="0.75" y="0.5" />
+                            <point x="0.71875" y="0.71875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.34375" y="0.65625" />
+                            <point x="0.3125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>Fase 1.xml</layout>
     </layout-folder>
     <event-folder>
-        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Mecanicas.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="3" />

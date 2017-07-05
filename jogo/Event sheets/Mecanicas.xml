@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
-    <name>Event sheet 1</name>
+    <name>Mecanicas</name>
     <events>
         <event-group description="" sid="318205359579192" title="Movimentação">
             <sub-events>
