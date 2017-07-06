@@ -6,7 +6,7 @@ Uma aventura 2D feita com Construct 2.
   - 10/10 Graphics
   - Ninjas!
 
-# Progresso
+### Progresso
 
   - Desenvolvimento da Fase 1
   - Movimentação do Personagem
